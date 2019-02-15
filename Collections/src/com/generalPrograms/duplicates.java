@@ -53,7 +53,7 @@ public class duplicates
 	{
 		String input="aaa bbb cccc";
 		String Str = new String("Welcome to Tutorialspoint.com");
-		//Stringfunctions(Str);
+		Stringfunctions(Str);
 		
 		
 		String[] array={"a","bb","cccc"};
