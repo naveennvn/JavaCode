@@ -30,6 +30,13 @@ public class duplicates
 			if(c != ' ')
 			characterSet.add(c);
 		}
+		Iterator setitertr=characterSet.iterator();
+		System.out.println("from iterator");
+		while(setitertr.hasNext())
+		{
+			System.out.print(setitertr.next());
+		}
+		
 		System.out.println(String.valueOf(characterSet).replace(","," "));
 		System.out.println(characterSet.toString());
 		return characterSet.toString();
@@ -37,14 +44,12 @@ public class duplicates
 
 	public static void Stringfunctions(String input)
 	{
-		System.out.println(input.replaceAll("(.*)Tutorial(.*)","Replaced"));
-		/*matches*/
+		  System.out.println(input.replaceAll("(.*)Tutorial(.*)","Replaced"));
+		   /*matches*/
 	      System.out.print("Return Value :" );
 	      System.out.println(input.matches("(.*)Tutorials(.*)"));
-
 	      System.out.print("Return Value :" );
 	      System.out.println(input.matches("Tutorials"));
-
 	      System.out.print("Return Value :" );
 	      System.out.println(input.matches("Welcome(.*)"));
 		
@@ -53,9 +58,8 @@ public class duplicates
 	{
 		String input="aaa bbb cccc";
 		String Str = new String("Welcome to Tutorialspoint.com");
+		findUnique("Naveen");
 		Stringfunctions(Str);
-		
-		
 		String[] array={"a","bb","cccc"};
 		boolean value=Arrays.asList(array).contains("aa");
 		char[] characters={'a','b'};

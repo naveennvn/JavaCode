@@ -44,7 +44,6 @@ public class PrintPattern {
 			
 			//printPattern();
 		
-		
 		int n=3,a=1;
 		for(int i=0;i<n;i++)
 		{
