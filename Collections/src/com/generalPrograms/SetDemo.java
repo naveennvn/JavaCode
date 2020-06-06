@@ -8,19 +8,19 @@ public class SetDemo {
 		Set<Character> charset=new HashSet<Character>();
 		for(char c:input.toCharArray())
 		      charset.add(c);
-		      for(char c:charset)
-		    	  System.out.print(c);
+		for(char c:charset)
+		  System.out.print(c);
 	}
 	
 	public static void SortArray(int count[])
 	{
 		Set<Integer> set = new HashSet<Integer>();
 		try {
-	         for(int i = 0; i < 5; i++) {
+	         for(int i = 0; i < count.length; i++) {
 	            set.add(count[i]);
 	         }
 	         set.add(-1);
-	         System.out.println(set);
+	         System.out.println("Values from Set Before Sort:"+set);
 	         System.out.println(set.contains(34));
 	        for(Integer iterater:set)
 	        {

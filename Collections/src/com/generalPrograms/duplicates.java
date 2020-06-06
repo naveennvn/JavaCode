@@ -44,10 +44,10 @@ public class duplicates
 
 	public static void Stringfunctions(String input)
 	{
-		  System.out.println(input.replaceAll("(.*)Tutorial(.*)","Replaced"));
+		  System.out.println("replacing all of the string:"+input+"  "+input.replaceAll("(.*)Tutorial(.*)","Replaced"));
 		   /*matches*/
 	      System.out.print("Return Value :" );
-	      System.out.println(input.matches("(.*)Tutorials(.*)"));
+	      System.out.println(input.matches("(.*)Tutorials(.*)"));//returns True or False based on match
 	      System.out.print("Return Value :" );
 	      System.out.println(input.matches("Tutorials"));
 	      System.out.print("Return Value :" );
