@@ -28,7 +28,7 @@ public class findMaxValueHashMap {
 	    {
 	    	if(entrywithMaxValue==null)
 	    		entrywithMaxValue=currententry;
-	    	if(currententry.getKey().compareTo(entrywithMaxValue.getKey())>0)
+	    	if(currententry.getValue().compareTo(entrywithMaxValue.getValue())>0)
 	    	{
 	    		entrywithMaxValue=currententry;
 	    	}

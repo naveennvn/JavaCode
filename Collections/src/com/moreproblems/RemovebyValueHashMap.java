@@ -22,6 +22,7 @@ public class RemovebyValueHashMap {
       while(iterator.hasNext())
       {
     	  Map.Entry<String, Integer> entry=iterator.next();
+    	  
     	  if(entry.getValue()==79)
     		  iterator.remove();
       }
