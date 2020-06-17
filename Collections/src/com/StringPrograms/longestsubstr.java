@@ -15,7 +15,9 @@ public class longestsubstr {
             }
             ans = Math.max(ans, j - i + 1);
             map.put(s.charAt(j), j + 1);
+            
         }
+        
         return ans;
 	}
 	public static void polyndrome(String s)
@@ -39,18 +41,12 @@ public class longestsubstr {
 		
 		
 	}
-	public static void convert(String s,int rows)
-	{
-		for(int i=0;i<=s.length();i++)
-		{
-			
-		}
-	}
+	
 		public static void main(String[] args)
 			{
 			
 			polyndrome("RAVAR");
-			System.out.println(lengthOfLongestSubstring("Naveen"));
+			System.out.println(lengthOfLongestSubstring("Naveencbv"));
 		    
 		    }
 		

@@ -1,23 +1,40 @@
 package com.Practicecode;
 
-import java.util.HashMap;
-import java.util.Map;
+import java.util.*;
+import java.util.Arrays;
+
+/*Given an array nums of n integers,
+are there elements a, b, c in nums such that a + b + c = 0? 
+Find all unique triplets in the array which gives the sum of zero.*/
 
 public class Practice4 {
-	//Rotate array number of times
-	
 	public static void main(String[] args) {
-		int [] input= {2,3,4,5,6,7,8,9,10,11};
-		int times=2;
-		for(int i=0;i<times;i++)
-		{
-			int first=input[0];
-			for(int j=0;j<input.length-1;j++)
-				input[j]=input[j+1];
-			input[input.length-1]=first;
+	
+		int [] nums= {-1, 0, 1, 2, -1, -4}; 
+		List<List<Integer>> output=new LinkedList();
+		Arrays.sort(nums);//-4,-1,-1,0,1,2
+		for(int i=0;i<nums.length-2;i++){
+			if(i==0||( i>0 && nums[i]!=nums[i-1]))
+			{
+				int left=i+1;
+				int right=nums.length-1;
+				int sum=0-nums[i];
+				while(left<right)
+				{
+					if(nums[left]+nums[right]==sum)
+					{
+						output.add(Arrays.asList(nums[i],nums[left],nums[right]));
+						//while(left<right && nums[left]==nums[left+1])left++;
+						//while(left<right && nums[right]==nums[right-1])right--;
+						left++;
+						right--;
+					}
+					else if (nums[left]+nums[right]>sum) right--;
+					else left++;
+				}
+			}
 		}
-		for(int a:input)
-			System.out.print(a);
-		
+		System.out.println(output);
 	}
+	
 }
