@@ -5,7 +5,7 @@ import java.util.Arrays;
 
 /**/
 
-public class Practice4 {
+public class Practice4_copy2 {
 	public static void main(String[] args) {
 	
 			}
