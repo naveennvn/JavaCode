@@ -1,4 +1,4 @@
-package com.StringPrograms;
+package com.LeetCodePrograms;
 //Replace car with bike without using replace method
 public class StringReplace {
 	

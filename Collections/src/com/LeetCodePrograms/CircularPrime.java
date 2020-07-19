@@ -1,8 +1,8 @@
-package com.StringPrograms;
+package com.LeetCodePrograms;
 
 import java.util.HashMap;
 import java.util.Map;
-//Print all circular Prime Numbers
+//Print all circular Prime Numbers 
 public class CircularPrime {
 	// Function to check if the number is circular  prime or not.
 	public static boolean isPrime(int num)

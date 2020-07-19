@@ -1,4 +1,4 @@
-package com.StringPrograms;
+package com.LeetCodePrograms;
 
 import java.util.HashMap;
 import java.util.HashSet;
@@ -23,8 +23,11 @@ public class LenLongSubstr {
 			}
 			else
 			{
-				set.remove(s.charAt(a_pointer));
-				a_pointer++;
+				/*while(set.contains(s.charAt(b_pointer)))
+				{
+					set.remove(0);
+					System.out.println(set);
+				}*/
 			}
 		}
 		System.out.println(set+"size:"+max);

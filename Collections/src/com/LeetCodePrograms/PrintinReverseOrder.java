@@ -1,4 +1,4 @@
-package com.StringPrograms;
+package com.LeetCodePrograms;
 
 public class PrintinReverseOrder {
 	//Print a sentence with all words in reverse order

@@ -1,4 +1,4 @@
-package com.StringPrograms;
+package com.LeetCodePrograms;
 import java.util.*;
 import java.io.*;
 

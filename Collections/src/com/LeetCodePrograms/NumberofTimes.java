@@ -1,4 +1,4 @@
-package com.StringPrograms;
+package com.LeetCodePrograms;
 
 import java.util.ArrayList;
 import java.util.HashMap;
