@@ -1,4 +1,4 @@
-package com.Practicecode;
+package com.moreproblems;
 
 import java.util.ArrayList;
 import java.util.Arrays;
@@ -6,8 +6,7 @@ import java.util.List;
 import java.util.stream.Collectors;
 
 public class Test2 {
-
-	public static void main(String[] args) {
+		public static void main(String[] args) {
 
 		List<Test1> t = Arrays.asList( new Test1("John", "Wilson"), new Test1("Scott", "Anderson"), new Test1("Bruce", "Kent"));
 		//String s=t.stream().reduce(" ",(acc, p) -> acc +p.firstname+" "+ p.lastname,String::concat);

@@ -1,10 +1,10 @@
-package com.Practicecode;
+package com.LeetCodePrograms;
 
 import java.util.Arrays;
 import java.util.LinkedList;
 import java.util.List;
 
-public class SumTriplet {
+public class SumTripletSimpleway {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub

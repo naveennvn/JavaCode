@@ -1,8 +1,9 @@
 package com.moreproblems;
 
-import java.util.Arrays;
-import java.util.List;
+import java.util.*;
 import java.util.stream.Collectors;
+
+/*THis Program Aims to remove the duplicates from the numbres given in a List*/
 
 public class RemoveDuplicates {
 	public static void removeDuplicates()
@@ -14,8 +15,19 @@ public class RemoveDuplicates {
 	}
 
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
-
-	}
-
+		List<String> stringList=new ArrayList<String>(Arrays.asList("1212","3454","4534","4046","2022","3035"));
+		List<String> outList =new ArrayList<String>();
+		HashSet<Character> set2=new HashSet<Character>();
+		for(String s:stringList)
+		{
+			set2.clear();
+			for(char c:s.toCharArray())
+			{
+				set2.add(c);
+			}
+			System.out.println(set2.toString().replace(",",""));
+			outList.add(set2.toString().replace(",","").trim());
+		}
+		System.out.println(outList);
+	}	
 }

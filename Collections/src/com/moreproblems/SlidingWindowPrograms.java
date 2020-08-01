@@ -1,13 +1,14 @@
-package com.LeetCodePrograms;
+package com.moreproblems;
 
 import java.util.*;
 import java.util.Map.Entry;
 import java.util.stream.Collectors;
 
 /*It is about finding the longest substring without having any duplicates from a string 
- * it uses sliding window [a,b] using HashSet and other collections*/
+ * it uses sliding window [a,b] using HashSet and other collections
+ * Reverse only vowels in a string and print*/
 
-public class LongestSubstr {
+public class SlidingWindowPrograms {
 	public static void findLengthofSubstr()
 	{
 		String s = "pipuqlwwkuabcdef";
@@ -57,8 +58,34 @@ public class LongestSubstr {
        //Entry also a type like integer string List<Entry<String,Integer>> list=new LinkedList(); 
         
     }
+	public static void reverseVowelsfromString() {
+		String s="leetcode";
+		Set<Character> set = new HashSet<>(Arrays.asList('a', 'e', 'i', 'o', 'u', 'A', 'E', 'I', 'O', 'U'));
+		char arr[]=s.toCharArray();
+		int left=0;int right=arr.length-1;
+		while(left<right) {
+			if(!set.contains(arr[left]))
+			{
+				left++;
+			}
+			else if(!set.contains(arr[right])) {
+				right--;
+			}
+			else {
+				char tmp=arr[left];
+				arr[left++]=arr[right];
+				arr[right--]=tmp;
+				
+			}
+		}
+		System.out.println(new String(arr));
+		
+
+	}
 	public static void main(String[] args) {
-		findLengthofSubstr();
-		lengthOfLongestSubstring();
+		//findLengthofSubstr();
+		//lengthOfLongestSubstring();
+		//reverseVowelsfromString();//it interchanges the vowels from first to last and last to first.
+				
 	}
 }

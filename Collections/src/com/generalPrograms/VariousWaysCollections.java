@@ -1,4 +1,4 @@
-package com.Practicecode;
+package com.generalPrograms;
 
 import java.util.ArrayList;
 import java.util.Arrays;
@@ -14,7 +14,7 @@ import java.util.stream.Collectors;
 import java.util.stream.Stream;
 
 /* various declarations and loop through of collections*/
-public class Practice1 {
+public class VariousWaysCollections {
 
 	public static void stringindifferentways() {
 		String s = "SearchinG characTerS and substrinG in a StRing in JaVa";
