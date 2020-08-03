@@ -10,6 +10,7 @@ import java.util.stream.Collectors;
 
 public class Practice4 {
 	public static void main(String[] args) {
-				
+				System.out.println("a".compareTo("A"));
+				System.out.println('A'-'a');
 	}
 }
