@@ -1,13 +1,16 @@
 package com.comparator;
 
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.Comparator;
 import java.util.List;
+import java.util.stream.Collectors;
 
 public class ComparatorTest {
 	/*Contains how to use comparable and comparator from Java*/
     public static void main(String[] args) {
-
+    	
+    		
         List<String> words = new ArrayList<>();
 
         words.add("dog");

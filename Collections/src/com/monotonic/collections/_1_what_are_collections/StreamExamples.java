@@ -49,7 +49,7 @@ public class StreamExamples {
 		//			people.stream().map(String::toLowerCase).filter(x -> x.startsWith("a")).forEach(System.out::println);
 
 		List<Integer> primeNo = Arrays.asList(1,2,3,4,5,6,7,8,9,10,11,12,13,14);
-		primeNo.stream().filter(x -> test(x)).forEach(System.out::println);
+		primeNo.stream().filter(x -> primeNumber(x)).forEach(System.out::println);
 
 
 
@@ -93,7 +93,7 @@ public class StreamExamples {
 		//			IntSummaryStatistics summary = IntStream.of(7, 2, 19, 88, 73, 4, 10).summaryStatistics();
 		//			System.out.println(summary);
 	}
-	static boolean test(int a) {
+	static boolean primeNumber(int a) {
 		return a % 2 == 0;
 	}
 }

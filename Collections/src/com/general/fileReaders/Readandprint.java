@@ -1,4 +1,4 @@
-package com.generalPrograms;
+package com.general.fileReaders;
 
 import java.io.*;
 import java.util.regex.Matcher;

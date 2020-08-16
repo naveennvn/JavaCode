@@ -35,7 +35,7 @@ public class Employee {
 		Employee employee2 = new Employee("Tom", "Smith", dateFormat.parse("2005-06-20"));
 		Employee employee3 = new Employee("Bill", "Joy", dateFormat.parse("2009-01-31"));
 		Employee employee4 = new Employee("Bill", "Gates", dateFormat.parse("2005-05-12"));
-		Employee employee5 = new Employee("Alice", "Wooden", dateFormat.parse("2009-01-22"));
+		Employee employee5 = new Employee("Alice", "Wooden", dateFormat.parse("2009-01-31"));
 		listEmployees.add(employee1);
 		listEmployees.add(employee2);
 		listEmployees.add(employee3);
@@ -46,15 +46,16 @@ public class Employee {
 		//System.out.println("After sorting: ");
 		
 		//to sort ascending order using comparable
-		listEmployees.sort((e1, e2) -> e2.getJoinDate().compareTo(e1.getJoinDate()));
-		
+		listEmployees.sort((e1, e2) -> e1.getJoinDate().compareTo(e2.getJoinDate()));
+		System.out.println("sorting using Comparable1: "+listEmployees);
 		//to sort descending order here it uses comparable
 		listEmployees.sort((e1, e2) -> e2.getJoinDate().compareTo(e1.getJoinDate()));
 		System.out.println("sorting using Comparable: "+listEmployees);
-		
 		listEmployees.stream().sorted((e1, e2) -> e2.getJoinDate().compareTo(e1.getJoinDate())).forEach(System.out::println);
+		System.out.println("-------");
+		listEmployees.stream().sorted((e1, e2) -> e1.getName().compareTo(e2.getName())).sorted((e1, e2) -> e1.getJoinDate().compareTo(e2.getJoinDate())).forEach(System.out::println);
 		
-		/*Deals with ----------------Comparator---------------*/
+		/*Deals with ----------------Comparator---------------*/ 
 		
 		//to sort with multiple comparisons using comparator
 		listEmployees.sort(Comparator.comparing(Employee::getJoinDate).thenComparing(Employee::getName));
@@ -62,17 +63,16 @@ public class Employee {
 		
 		//sorting using Comparator with ListSort and CollectionSort
 		Comparator<Employee> compemployee=Comparator.comparing(Employee::getJoinDate);
+		
 		System.out.println("Before:"+listEmployees);
 		//Here using the list sort with the comparator created
+		
 		listEmployees.sort(compemployee.reversed());
 		System.out.println("After using list sort:"+listEmployees);
 		//Here using the Collections sort with the comparator created
 		Collections.sort(listEmployees,compemployee);
-		System.out.println("After:"+listEmployees);
+		System.out.println("After Collections Sort:"+listEmployees);
 		
 		listEmployees.stream().sorted(compemployee).forEach(System.out::println);
 	}
-	
-	
-
 }
