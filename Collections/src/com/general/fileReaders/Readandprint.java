@@ -21,7 +21,8 @@ public class Readandprint {
 		} catch (IOException e) {e.printStackTrace();}
 		
 		return sb.toString();
-		
+
+
 	}
 	
 	public static void ReadNReplace(String inputpattern,String input,String toreplace)
